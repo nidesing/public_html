@@ -1,0 +1,131 @@
+.quiz-el{
+	background: none repeat scroll 0 0 orange;
+	border: 1px solid #184282;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: wheat;
+    float: left;
+    font-size: 1.1em;
+	margin-left: 15px;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    position: relative;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    width: 722px;
+	margin-bottom: 20px;
+	
+}
+.quiz-el div{
+	padding: 0.2em;
+}
+.q-innerArea{
+	position:relative;
+	clear: both;
+	color: black;
+}
+.q-header, .q-help, .q-review-menu {
+	border-bottom: thin black solid;
+}
+.q-intro{
+	padding: 0.2em;
+}
+.q-title{
+	overflow: hidden;
+	width: 80%;
+	margin: 0;
+}
+.q-counter{
+	margin-top: -18px;
+	/*color:#FFF;*/
+}
+.q-counter{
+	float: left;
+	font-size: 1.3em;
+	position: absolute;
+	top: 22px
+}
+.q-help{
+	position: relative;
+	clear:both;
+}
+.q-probArea{
+    margin-left: 40px;
+    position: relative;
+    width: 80%;
+}
+.q-help-menu{
+	width: 97%;
+}
+.q-help-info{
+	clear:both;
+}
+.q-quit-confirm, .q-quit-area, .q-review-arrows{
+	display: inline;
+	width: auto;
+}
+.q-quit-area{
+	float: right;
+}
+.q-review-arrows{
+	position: relative;	/*IE hack.*/
+	width: 2.3em;
+}
+.q-center{
+	text-align: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.q-gameOver .q-statTotal{
+	color: blue;
+}
+.q-quesInput{
+	width: 95%;
+}
+.q-ol{
+	list-style-type: upper-alpha;
+	list-style-position: inside;
+	padding: 0;
+	margin: 0;
+}
+.q-ol-li{
+	margin: 0.4em auto 0.4em auto;
+	display: list-item; 
+}
+
+.q-ol-active{
+	background: black;
+	color: #ccffaa;
+}
+.q-select{
+	width : 80%;
+}
+.q-select{
+	font-size: 0.8em;
+	width: 100%;
+}
+.q-timer-area{
+	display:block;
+	text-align:center;
+	width: auto;
+}
+.q-review-menu{
+	text-align: center;
+	width: auto;
+}
+.q-reviewBar-btns{
+	position: relative;
+	display: inline-block;
+	width: 49%;
+}
+.q-rightArrow{
+	float:right;
+}
+.q-leftArrow{
+	float:left;
+}
+.q-timer-area{
+	line-height: 0;
+	height:0;
+}

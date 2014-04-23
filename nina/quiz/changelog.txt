@@ -1,0 +1,14 @@
+Bugs fix:
+
+09/01/2011
+ - You have to turn off error reporting global
+ - Session time longer 7200 secs
+ - Important to install this app into a maindomain or a subdomain but not in a subdir. yourdomain.com/subdir this won't work, but yourdomain.com or app.yourdomain.com will
+
+09/13/2011
+- Points on Players page
+- Meta tags in datebase
+- ionCube protection
+- Need validation to use
+ 
+ 

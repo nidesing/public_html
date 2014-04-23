@@ -1,0 +1,229 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Instant Facebook Quiz - An easy-to-install quiz on Facebook</title>
+	
+	<meta name="description" content="Instant Facebook Quiz is a fully customizable and easy-to-use facebook quiz. 
+It contains a user interface integrated with Facebook and an admin page where you can edit the questions and customize the layout, including the colors of the application and the text fields seen by the users. 
+You have full access to the players’ name, email, age, gender information. ">
+	<meta name="author" content="Victor Arthur">
+	<meta name="copyright" content="Victor Arthur">
+	<meta name="generator" content="Documenter v1.4 http://rxa.li/documenter">
+	<meta name="date" content="2011-09-14T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_3.png);}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#requirements">Requirements </a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#setting_up">Setting up</a></li>
+			<li><a href="#common_errors">Common errors</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Victor Arthur 2011<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.4</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Instant Facebook Quiz</h1><h2>An easy-to-install quiz on Facebook</h2><hr><ul><li>Created: 08/29/2011</li><li>latest Update: 09/14/2011</li><li>By: Victor Arthur.</li><li><a href="http://apps.facebook.com/instantfbquiz/">apps.facebook.com/instantfbquiz/</a></li><li>Email: <a href="mailto:support@victorarthur.com">support@victorarthur.com</a></li></ul><p>Instant Facebook Quiz is a fully customizable and easy-to-use facebook quiz. 
+It contains a user interface integrated with Facebook and an admin page where you can edit the questions and customize the layout, including the colors of the application and the text fields seen by the users. 
+You have full access to the players’ name, email, age, gender information. </p></section><section id="features">
+	<h3>Features</h3><hr class="notop">
+<ul>
+	<li>
+		Fully customizable skin</li>
+	<li>
+		Unlimited questions</li>
+	<li>
+		WYSIWYG question ediotor</li>
+	<li>
+		Up to 5 answers for 1 question</li>
+	<li>
+		WYSIWYG text field ediotor &nbsp;</li>
+	<li>
+		Full control over the database</li>
+	<li>
+		Full access to the players&rsquo; data: name, email, age, gender</li>
+	<li>
+		Posts a Facebook message on the player&rsquo;s wall</li>
+	<li>
+		Facebook share option</li>
+</ul>
+</section>
+<section id="requirements">
+	<h3>Requirements </h3><hr class="notop">
+<ul>
+	<li>ionCube PHP Loader v4.0.9</li>
+	<li>Zend Optimalizer</li>
+	<li>Zend Guard Loader v3.3</li>
+	<li>MySQL 5.x database</li>
+	<li>PHP 5.3.6 server</li>
+	<li>Facebook account</li>
+</ul>
+</section>
+<section id="installation">
+	<h3>Installation</h3><hr class="notop">
+<ol>
+	<li>
+		Create a database.</li>
+</ol>
+<ul>
+	<li>
+		In the further steps you will need the username and the password of the database user.</li>
+	<li>
+		Grant all privileges to the user.</li>
+	<li>
+		Import the content of the SQL/quizdemo_db.sql file.</li>
+</ul>
+<ol start="2">
+	<li>
+		Install your quiz</li>
+</ol>
+<p>
+	First thing you have to do is to upload the Quiz Application files on your server. You will find the files page in the zip folder. You will need the link to the website.</p>
+<p>
+	Open the database_config.inc.php end fill in the fields with the coresponding strings from the previous section:</p>
+<pre>
+define(&#39;DB_USER&#39;, &quot;Your_DB_User&quot;);
+define(&#39;DB_PASS&#39;, &quot;Your_DB_Password&quot;);
+define(&#39;DB_DATABASE&#39;, &quot;Your_DB_Name&quot;);
+</pre>
+<ol start="3">
+	<li>
+		Integrate with Facebook</li>
+</ol>
+<p>
+	To create Facebook applications you need to register your account on&nbsp;<a href="http:// https://developers.facebook.com/"> https://developers.facebook.com/</a></p>
+<p>
+	Create an application.</p>
+<p>
+	You can find the App ID and App Secret on the top. You will need them later.</p>
+<p>
+	Fill in the form like below:</p>
+<p>
+	<img alt="" src="assets/images/image_1.png"></p>
+<p>
+	<img alt="" src="assets/images/image_2.png"></p>
+<p style="font-size:1.6em; color: red;">
+	Register you quiz domain on <a href="http://victorarthur.com/item-validation">http://victorarthur.com/item-validation</a> .<br />In 24h you will get a key file.</p>
+
+<p>
+	Now your quiz application has to be working!</p>
+</section>
+<section id="setting_up">
+	<h3>Setting up</h3><hr class="notop">
+<p>
+	You can customize the Instant Quiz from the admin page, which you can find under<br>
+	http://YourSiteURL/admin.</p>
+<p>
+	Log in using the default admin/admin for username and password.</p>
+<h2>
+	Settings</h2>
+<p>
+	In the Settings menu you can change the threshold percentage reached by the players to become winners.<br>
+	You can also delete all the questions and answers and the list of players by clicking the corresponding buttons.<br>
+	Instant Quiz is designed to handle only one administrator. You can change his username and password in the Settings menu.</p>
+<h2>
+	Question editor</h2>
+<p>
+	New questions are uploaded in the Question editor menu.<br>
+	The fields Question and Correct answer are required, if you leave any of them empty, the question cannot be uploaded.<br>
+	There is no limit for the number of questions. You can upload at most 4 wrong answers for each question.</p>
+<h2>
+	Review questions and answers</h2>
+<p>
+	Uploaded questions and answers can be deleted and modified by clicking the&nbsp;&nbsp; and&nbsp;&nbsp; icons. &nbsp;</p>
+<h2>
+	<br>
+	Players</h2>
+<p>
+	In the players menu you can review the name, email address, age, gender of the players. The results and the date of the game are listed as well.</p>
+<h2>
+	<br>
+	Customize the text areas</h2>
+<p>
+	All text fields&rsquo; and text areas&rsquo; content can be changed in the text fields menu. You can format the text areas using a WYSIWYG edior.<br>
+	You can edit the labels of the buttons, the rules of the game, the texts seen at the end of the game and the post messages.<br>
+	Strings (name), (%) and (like) in the corresponding fields are replaced by the name of the player, his or her results reached and the a Like button referring to your Facebook fanpage.</p>
+<h2>
+	Design</h2>
+<p>
+	You can change the logo of the application by modifying the source of the image in the index.php and endgame.php file (lines 108-110):</p>
+<pre>
+&lt;div id=&quot;logo&quot; style=&quot;float:left; margin-top:10px; padding-left:10px;&quot;&gt;
+    &lt;img src=&quot;images/logo_with_text.png&quot; alt=&quot;Logo&quot; width=&quot;200&quot; /&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	To change the image of the front page modify lines 125-127 of index.php:</p>
+<pre>
+&lt;div id=&quot;toggleText&quot; style=&quot;display: block; text-align:center;&quot;&gt;
+    &lt;img src=&quot;images/startimg.jpg&quot; alt=&quot;sample&quot; width=&quot;760&quot; /&gt;
+&lt;/div&gt; 
+</pre>
+<p>
+	The image containing the boxes below can be found in the index.php lines 132-134. The content of the boxes can be edited by altering pizza.psd.</p>
+<pre>
+&lt;div id=&quot;footer&quot;&gt;
+    &lt;img src=&quot;images/footer.png&quot; alt=&quot;sample&quot; width=&quot;760&quot; /&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	The colour of the Start button can be altered by modifying lines 153-180 of CSS/style.css .<br>
+	The colour of the buttons Rules and Winners are described in lines 111-130 of CSS/style.css.<br>
+	The colour of the Share button is described in lines 132-151 of CSS/style.css.</p>
+<p>
+	The background colour of the quiz is described in the 2nd line of CSS/InstantQuiz.css.<br>
+	The text colour of the quiz is described in the 6th line of CSS/InstantQuiz.css.<br>
+	To change the shared image change its path in index.php line 119 and endgame.php line 112.</p>
+<p>
+	To change the post image change its path in endgame.php line 38.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="common_errors">
+	<h3>Common errors</h3><hr class="notop">
+<p>
+	If you have just connected your quiz to Facebook and it cannot be loaded, check the config.inc.php file. It is very important that FBAPPID, FBAPI and FBSECRET strings look exactly like on the developer page and contain no spaces between the string and the quote mark.</p>
+</section>
+
+	</div>
+</body>
+</html>
